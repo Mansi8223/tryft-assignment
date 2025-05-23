@@ -192,13 +192,6 @@ body {
 /* End Foreground Colors */
 
 /* Background Colors */
-.bg-primary-gradient {
-  background: linear-gradient(
-    94.19deg,
-    var(--primary-dark) -19.04%,
-    var(--primary) 19.93%
-  );
-}
 .bg-success-light{
   background-color: var(--success-light);
 }
@@ -486,14 +479,6 @@ div {
 }
 .primary-scrollbar::-webkit-scrollbar-thumb {
   background-color: var(--primary-dark);
-}
-
-.box-shadow {
-  box-shadow: 0px 4px 13px 0px #00000014;
-}
-
-.content-height{
-  height: calc(100vh - 280px);
 }
 
 @media screen and (max-width:1239.98px){

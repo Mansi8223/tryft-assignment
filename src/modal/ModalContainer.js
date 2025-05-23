@@ -12,7 +12,7 @@ function ModalContainer(props) {
             props?.modalResponsieClass
               ? props?.modalResponsieClass
               : "col-11 col-xs-11 col-sm-7 col-md-6 col-lg-5 col-xl-5 col-xxl-5"
-          } bg-white-bottom-gradient rounded-16`}
+          }`}
         >
           {props.children}
         </div>
