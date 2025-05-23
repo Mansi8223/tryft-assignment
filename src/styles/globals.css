@@ -1,42 +1,499 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #1dcc66;
+  --primary-dark: #0f6633;
+  --dark-green: #056129;
+  --forest-green: #0A2F24;
+  --purple: #edeeff;
+  --faded-black: #323232;
+  --gray: #5a5a5a;
+  --black: #00040d;
+  --smoke: #e0e0e0;
+  --smoke-2: #E6E6E6;
+  --error: #3c0808d9;
+  --error-light: #f4d7d7fa;
+  --success-light: #d9f8e5;
+  --glass-white: rgba(255, 255, 255, 0.2);
+  --off-white: #fafafa;
+  --white: #ffffff;
+  --font-family: "Poppins", sans-serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 html,
 body {
-  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-style: normal;
+  background-color: var(--white);
+  color: var(--black);
+  scroll-behavior: smooth;
+}
+
+/* Display Starts */
+
+.d-flex {
+  display: flex;
+}
+.d-grid {
+  display: grid;
+}
+.d-block {
+  display: block;
+}
+.d-inline {
+  display: inline;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.d-inline-flex {
+  display: inline-flex;
+}
+.d-inherit {
+  display: inherit;
+}
+.d-none {
+  display: none;
+}
+
+.d-flex-wrap {
+  flex-wrap: wrap;
+}
+.d-flex-row {
+  flex-direction: row;
+}
+.d-flex-column {
+  flex-direction: column;
+}
+.d-flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.d-flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.d-align-center {
+  align-items: center;
+}
+.d-align-start {
+  align-items: flex-start;
+}
+.d-align-end {
+  align-items: flex-end;
+}
+.d-align-baseline {
+  align-items: baseline;
+}
+.d-align-content-center {
+  align-content: center;
+}
+.d-align-content-start {
+  align-content: flex-start;
+}
+.d-align-content-end {
+  align-content: flex-end;
+}
+.d-justify-center {
+  justify-content: center;
+}
+.d-justify-start {
+  justify-content: flex-start;
+}
+.d-justify-end {
+  justify-content: flex-end;
+}
+.d-justify-space-between {
+  justify-content: space-between;
+}
+.d-justify-space-around {
+  justify-content: space-around;
+}
+.d-flex-100 {
+  flex: 1 1;
+}
+.self-start {
+  align-self: flex-start;
+}
+.self-center {
+  align-self: center;
+}
+.self-end {
+  align-self: flex-end;
+}
+.d-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.d-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.d-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.d-grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+/* Display Ends */
+
+/* Positions Starts */
+
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+.p-fixed {
+  position: fixed;
+}
+.p-sticky {
+  position: sticky;
+}
+.p-static {
+  position: static;
+}
+.p-inherit {
+  position: inherit;
+}
+.p-initial {
+  position: initial;
+}
+.p-unset {
+  position: unset;
+}
+/* Positions Ends */
+
+/* Foreground Colors */
+.text-primary{
+  color: var(--primary-dark);
+}
+.text-gray {
+  color: var(--gray);
+}
+.text-faded-black {
+  color: var(--faded-black);
+}
+.text-dark-green{
+  color: var(--dark-green);
+}
+.text-white {
+  color: var(--white);
+}
+.text-black {
+  color: var(--black);
+}
+/* End Foreground Colors */
+
+/* Background Colors */
+.bg-primary-gradient {
+  background: linear-gradient(
+    94.19deg,
+    var(--primary-dark) -19.04%,
+    var(--primary) 19.93%
+  );
+}
+.bg-success-light{
+  background-color: var(--success-light);
+}
+.bg-off-white {
+  background-color: var(--off-white);
+}
+.bg-purple {
+  background-color: var(--purple);
+}
+.bg-gray {
+  background-color: var(--gray);
+}
+.bg-faded-black {
+  background-color: var(--faded-black);
+}
+.bg-forest-green{
+  background-color: var(--forest-green);
+}
+.bg-glass-white{
+  background-color: var(--glass-white);
+}
+.bg-white {
+  background-color: var(--white);
+}
+.bg-black {
+  background-color: var(--black);
+}
+.bg-none {
+  background-color: transparent;
+}
+/* End Background Colors */
+
+/* Opacity Starts */
+.op-1 {
+  opacity: 1;
+}
+.op-01 {
+  opacity: 0.1;
+}
+.op-03 {
+  opacity: 0.3;
+}
+.op-04 {
+  opacity: 0.4;
+}
+.op-05 {
+  opacity: 0.5;
+}
+.op-06 {
+  opacity: 0.6;
+}
+.op-07 {
+  opacity: 0.7;
+}
+.op-08 {
+  opacity: 0.8;
+}
+.op-09 {
+  opacity: 0.9;
+}
+
+/* Opacity Ends */
+
+/* Overflow Starts */
+.o-hidden {
+  overflow: hidden;
+}
+.ox-hidden {
   overflow-x: hidden;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.oy-hidden {
+  overflow-y: hidden;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.o-scroll {
+  overflow: scroll;
+}
+.ox-scroll {
+  overflow-x: scroll;
+}
+.oy-scroll {
+  overflow-y: scroll;
 }
 
+.o-visible {
+  overflow: visible;
+}
+.ox-visible {
+  overflow-x: visible;
+}
+.oy-visible {
+  overflow-y: visible;
+}
+/* Overflow Ends */
+
+.object-cover {
+  object-fit: cover;
+}
+.object-contain {
+  object-fit: contain;
+}
+/* Buttons Starts */
+
+.btn {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  border-radius: 30px;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.btn.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* Classes Related to Typography Starts */
 a {
-  color: inherit;
   text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+span {
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+  font-family: var(--font-family);
+}
+ul,
+ol {
+  padding: 0 0 0 1.6rem;
+  margin: 0 0 1.6rem 0;
+}
+.list-style-none {
+  list-style: none;
+}
+.list-style-numeric {
+  list-style: decimal;
+}
+div {
+  font-size: 1.6rem;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.user-select-none {
+  user-select: none;
+}
+/* Classes Related to Typography Ends */
+
+/* Border Radius Starts */
+.rounded {
+  border-radius: 100px;
+}
+.rounded-4 {
+  border-radius: 4px;
+}
+.rounded-12 {
+  border-radius: 12px;
+}
+.rounded-15 {
+  border-radius: 15px;
+}
+.rounded-16{
+  border-radius: 16px;
+}
+.rounded-20 {
+  border-radius: 20px;
+}
+/* Border Radius Ends */
+
+.border-none {
+  border: none;
+}
+.border {
+  border: 1px solid;
+}
+.border-top {
+  border-top: 1px solid;
+}
+.border-bottom {
+  border-bottom: 1px solid;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.border-size-2 {
+  border-width: 2px;
+}
+
+/* border colors */
+.border-primary{
+  border-color: var(--primary);
+}
+.border-gray {
+  border-color: var(--gray);
+}
+.border-smoke {
+  border-color: var(--smoke);
+}
+.border-smoke-2 {
+  border-color: var(--smoke-2);
+}
+.border-glass-white{
+  border-color: var(--glass-white);
+}
+.border-transparent {
+  border-color: transparent;
+}
+.border-black {
+  border-color: #000000;
+}
+
+/*gap start*/
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-9 {
+  gap: 2.25rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+/*gap end*/
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* transition */
+.transition-all {
+  transition: all 0.5s;
+}
+
+/* scroll bar styles */
+.scrollbar-width-none {
+  scrollbar-width: none;
+}
+.primary-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.primary-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* Optional */
+}
+.primary-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--primary-dark);
+}
+
+.box-shadow {
+  box-shadow: 0px 4px 13px 0px #00000014;
+}
+
+@media screen and (max-width:1239.98px){
+  .content-padding{
+    padding: 0px 20px;
   }
 }

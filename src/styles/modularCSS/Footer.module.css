@@ -1,0 +1,8 @@
+.followUsContainer {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@media screen and (max-width: 767.98px) {
+  .footerContent {
+    flex-direction: column;
+  }
+}

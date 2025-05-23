@@ -1,0 +1,146 @@
+{
+  "data": [
+    {
+      "label": "Material Data",
+      "content": [
+        {
+          "label": "Material ID",
+          "value": "20011201"
+        },
+        {
+          "label": "Material Description",
+          "value": "MUCINEX FSTMX COLDSINUS CAP"
+        },
+        {
+          "label": "Material Type",
+          "value": "Raw"
+        },
+        {
+          "label": "Product Type",
+          "value": "Excipient"
+        },
+        {
+          "label": "Product Group",
+          "value": "DXERT"
+        },
+        {
+          "label": "Family Code",
+          "value": "MZ"
+        },
+        {
+          "label": "Family Description",
+          "value": "Movaza"
+        },
+        {
+          "label": "Creation Date",
+          "value": "15.10.2003"
+        },
+        {
+          "label": "Storage Condition",
+          "value": "C1"
+        },
+        {
+          "label": "MRP Group",
+          "value": ""
+        },
+        {
+          "label": "MRP Type",
+          "value": ""
+        },
+        {
+          "label": "Units of Measurement",
+          "value": "KG"
+        },
+        {
+          "label": "QI Lead Time",
+          "value": "15 Days"
+        },
+        {
+          "label": "Planned Delivery Time",
+          "value": "31 Days"
+        },
+        {
+          "label": "Safety Stock",
+          "value": "0"
+        },
+        {
+          "label": "Minimum Lot Size",
+          "value": "0"
+        },
+        {
+          "label": "Maximum Lot Size",
+          "value": "99.99,999.999"
+        }
+      ]
+    },
+    {
+      "label": "Batch Data",
+      "content": [
+        {
+          "label": "Material ID",
+          "value": "20011201"
+        },
+        {
+          "label": "Batch ID",
+          "value": "GHYIOP"
+        },
+        {
+          "label": "Supplier Assigned Batch ID",
+          "value": "V9065456"
+        },
+        {
+          "label": "Batch Status",
+          "value": "Restricted"
+        },
+        {
+          "label": "Batch Classification",
+          "value": "OnHold"
+        },
+        {
+          "label": "Batch Classification Description",
+          "value": "On Hold for Retest"
+        },
+        {
+          "label": "Storage Location",
+          "value": "RM0022"
+        },
+        {
+          "label": "Gross Stock",
+          "value": "200,000"
+        },
+        {
+          "label": "Gross Value",
+          "value": "$14,000.00"
+        },
+        {
+          "label": "Restricted Stock",
+          "value": "120,000"
+        },
+        {
+          "label": "Restricted Stock Value",
+          "value": "$8,400.00"
+        },
+        {
+          "label": "Unrestricted Stock",
+          "value": "80,000"
+        },
+        {
+          "label": "Unrestricted Stock Value",
+          "value": "$5,600.00"
+        },
+        {
+          "label": "QI Stock",
+          "value": "0"
+        },
+        {
+          "label": "QI Stock Value",
+          "value": "$0.00"
+        },
+        {
+          "label": "Blocked Stock",
+          "value": "0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+.socialIcons>span{
+    width: 32px;
+    height: 32px;
+    background: rgba(0, 0, 0, 0.60);
+}
+@media screen and (max-width:567.98px) {
+    .socialIcons{
+        gap: 20px;
+    }
+}
