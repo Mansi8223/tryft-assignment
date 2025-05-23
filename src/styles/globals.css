@@ -492,8 +492,13 @@ div {
   box-shadow: 0px 4px 13px 0px #00000014;
 }
 
+.content-height{
+  height: calc(100vh - 280px);
+}
+
 @media screen and (max-width:1239.98px){
   .content-padding{
     padding: 0px 20px;
   }
 }
+
