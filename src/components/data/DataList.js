@@ -33,7 +33,7 @@ function DataList() {
           {data?.map((item, index) => (
             <li key={index + 1} className="d-flex gap-4 pl-4 pr-4 pt-3 pb-3">
               <span className="col-6 text-black">{item?.label}</span>
-              <span className="col-6 text-gray op-08">{item?.value}</span>
+              <span className="col-6 text-gray op-08">{item?.value || "-"}</span>
             </li>
           ))}
         </ul>
